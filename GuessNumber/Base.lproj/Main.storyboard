@@ -94,7 +94,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="VHM-VS-xNX" id="pwa-1t-HVN"/>
                         <outlet property="sLabel" destination="Ep8-ca-7iu" id="rly-lP-XkO"/>
+                        <outlet property="scoreLabel" destination="zTk-jg-En8" id="Iho-fg-lw8"/>
                         <outlet property="slider" destination="3mW-wR-frp" id="TDH-WG-ieA"/>
                     </connections>
                 </viewController>

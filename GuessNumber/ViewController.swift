@@ -5,24 +5,30 @@ class ViewController: UIViewController {
   
     @IBOutlet var slider: UISlider!
     @IBOutlet var sLabel: UILabel!
+    @IBOutlet var roundLabel: UILabel!
+    @IBOutlet var scoreLabel: UILabel!
     
     
     var currentValue = 0
     var targetValue = 0
     var round = 0
+    var score = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        currentValue = lroundf(slider.value)
-        targetValue = Int.random(in: 1...100)
         startNewRound()
     }
     
     @IBAction func showAlert() {
-       
+        let difference = abs(targetValue - currentValue)
+        let points = 100 - difference
+        score += points
+        
+        let message = "You scored \(points) points"
+        
         let alert = UIAlertController(
-            title: "\(targetValue)",
-            message: "How close were you?",
+            title: "My number is \(targetValue)",
+            message: message,
             preferredStyle: .alert)
         
         let action = UIAlertAction(
@@ -47,5 +53,11 @@ class ViewController: UIViewController {
         currentValue = 1 // moves the slider back to 1 after each round
         slider.value = Float(currentValue)
         sLabel.text = "\(currentValue)"
+        updateLabels()
+    }
+    
+    func updateLabels() {
+        scoreLabel.text = String(score)
+        roundLabel.text = String(round)
     }
 }
