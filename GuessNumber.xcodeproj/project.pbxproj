@@ -13,6 +13,8 @@
 		37130C832BFE43E40033BB11 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 37130C822BFE43E40033BB11 /* Base */; };
 		37130C852BFE43E60033BB11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37130C842BFE43E60033BB11 /* Assets.xcassets */; };
 		37130C882BFE43E60033BB11 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 37130C872BFE43E60033BB11 /* Base */; };
+		373904782C08B35200932FE5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373904772C08B35200932FE5 /* AboutViewController.swift */; };
+		3739047A2C08B5DF00932FE5 /* About.html in Resources */ = {isa = PBXBuildFile; fileRef = 373904792C08B5DF00932FE5 /* About.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		37130C842BFE43E60033BB11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37130C872BFE43E60033BB11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37130C892BFE43E60033BB11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		373904772C08B35200932FE5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = GuessNumber/AboutViewController.swift; sourceTree = "<group>"; };
+		373904792C08B5DF00932FE5 /* About.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = About.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		37130C6F2BFE43E40033BB11 = {
 			isa = PBXGroup;
 			children = (
+				373904772C08B35200932FE5 /* AboutViewController.swift */,
 				37130C7A2BFE43E40033BB11 /* GuessNumber */,
 				37130C792BFE43E40033BB11 /* Products */,
 			);
@@ -56,6 +61,7 @@
 		37130C7A2BFE43E40033BB11 /* GuessNumber */ = {
 			isa = PBXGroup;
 			children = (
+				373904792C08B5DF00932FE5 /* About.html */,
 				37130C7B2BFE43E40033BB11 /* AppDelegate.swift */,
 				37130C7D2BFE43E40033BB11 /* SceneDelegate.swift */,
 				37130C7F2BFE43E40033BB11 /* ViewController.swift */,
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3739047A2C08B5DF00932FE5 /* About.html in Resources */,
 				37130C852BFE43E60033BB11 /* Assets.xcassets in Resources */,
 				37130C882BFE43E60033BB11 /* Base in Resources */,
 				37130C832BFE43E40033BB11 /* Base in Resources */,
@@ -140,6 +147,7 @@
 			files = (
 				37130C802BFE43E40033BB11 /* ViewController.swift in Sources */,
 				37130C7C2BFE43E40033BB11 /* AppDelegate.swift in Sources */,
+				373904782C08B35200932FE5 /* AboutViewController.swift in Sources */,
 				37130C7E2BFE43E40033BB11 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +302,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GuessNumber/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Guess Number";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,6 +330,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GuessNumber/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Guess Number";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
